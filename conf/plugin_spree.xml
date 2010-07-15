@@ -1,0 +1,24 @@
+<configuration plugin="spree">
+<!--
+| The # character splits the 'start' spree from the 'end' spree.
+-->
+	<settings name="settings">
+<!-- Reset spree stats for all clients at map rotation 0 = no, 1 = yes -->
+		<set name="reset_spree">0</set>
+<!-- The minimum level to be able to use the !spree/@spree command. -->
+		<set name="min_level_spree_cmd">20</set>
+	</settings>
+
+	<settings name="killingspree_messages">		
+		<set name="10">%player% is heating up!!! (10 K Spree) # %player% STOPPED %victim%</set>
+		<set name="15">%player% is on FIRE!!! (15 K Spree) # %player% has given %victim% a cold shower</set>
+		<set name="20">%player% is UNBELIEVABLE!!! (20 K Spree) # %player% sent %victim% back to woodshed</set>
+                <set name="25">%player% is GODLIKE!!! (25 K Spree) # Finally %player% STOPPED %victim%</set>
+                <set name="30">%player% turned into Chuck Norris!!! (30 K Spree) # %player% smacked %victim% down</set>
+	</settings>
+
+	<settings name="loosingspree_messages">		
+		<set name="10">%player%, Are you sure you went through basic training? # You're back in business %player%</set>
+                <set name="20">%player%, needs to uninstall Call Of Duty!! # You're back in business %player%</set>
+	</settings>
+</configuration>
